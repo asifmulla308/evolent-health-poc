@@ -1,0 +1,17 @@
+.App{
+    text-align:center;
+}
+
+.main{
+    background-color: #2c3428;
+    min-height: 100vh;
+    min-width: 900px;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+.navBar{
+    background-color: transparent !important;
+    box-shadow: none !important;
+}
