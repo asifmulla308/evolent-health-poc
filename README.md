@@ -18,7 +18,7 @@
 ├── package.json  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;      # Contains commands to launchor test application.Also contains dependency packages \
 
 
-- Source file(src) -A typical top-level directory layout
+### Source file(src) -A typical top-level directory layout
 
 ├── __tests__     &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;         # Unit test case \
 ├── components    &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;     # Reusable components(datagrid,Dialog Modal) \
@@ -26,37 +26,36 @@
 ├── helpers    &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;         # Contains Common code API access,utility \
 ├── pages  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;      # Contains parent pages   \
 
-### Unit Test(EvolentHealthAPITest) - A typical top-level directory layout
-
-- Unit test covers all method/function that has been used. \
-
-├── ControllerTests &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;# Covers UnitTest case for all controller's actions \
-├── Repository     &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;   # Covers unit test case  for repository functions
 
 
+## Here's how UI looks like 
 
-### Swagger UI
-- Swagger Index screen
+- Launch Screen
 
-![Alt text](https://github.com/asifmulla308/EvolentHealth_API/blob/master/images/swagger_main.png "swaggermain")
+![Alt text](https://github.com/asifmulla308/evolent-health-poc/blob/master/images/home_screen.png "home screen")
 
-- Swagger real time example
+- Create new user Screen
 
-![Alt text](https://github.com/asifmulla308/EvolentHealth_API/blob/master/images/swagger_get_demo.png "swaggermain")
+![Alt text](https://github.com/asifmulla308/evolent-health-poc/blob/master/images/createnew_profile.png "create screen")
+
+- Edit user details Screen
+
+![Alt text](https://github.com/asifmulla308/evolent-health-poc/blob/master/images/onedit_click.png "edit screen")
+
+- Change profile stautus Screen
+
+![Alt text](https://github.com/asifmulla308/evolent-health-poc/blob/master/images/status_change.png "Change status screen")
+
+- Validation Screen
+
+![Alt text](https://github.com/asifmulla308/evolent-health-poc/blob/master/images/validation.png "home screen")
 
 ### Development Details:
-- Used SQL Server Database ('Database Name': "evolenthealth")
-- Used .Net Core API
-- For Database and application communication used Entity Framewor. Follows Database first approch.
+- Used axios library to communicate .net core API(https://localhost:44376/api/v1/)
+- helper>data-access.js - Contains all http methods that has been used.
+- Maked use of reusable component/
 - Controller has below methods
-
-
-├── Get             &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;         # Get All list of contacts \
-├── GetContactById   &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;        # Get contact by passing Id \
-├── Post             &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;        # Insert new contact \
-├── Put             &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;         # Update existing Contact details \
-├── UpdateStatus(Put) &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;       # Update user status \
-├── Delete            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;       # Delete contact details using 
+- Handle all fields validation properly.
 
 
 ## Available Scripts
